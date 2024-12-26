@@ -1,0 +1,24 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+    public static void main(String[] args) throws java.lang.Exception
+    {
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        for (int i = 0; i < t; i++) {
+            int x = sc.nextInt();
+            int z=0;
+            while(x!=0){
+                int y=x%10;
+                z=z*10+y;
+                x=x/10;
+            }
+            System.out.println(z);
+            
+        }
+
+    }
+}
