@@ -1,0 +1,27 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+    public static void main(String[] args) throws java.lang.Exception
+    {
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        for (int i = 0; i < t; i++) {
+            int x = sc.nextInt();
+            int y = sc.nextInt();
+            if (x <= 10 && y <= 10) {
+                System.out.println(0);
+            }
+            else {
+                double a = (double) x / 10;
+                double b =(double) y / 10;
+                int c = (int) Math.ceil(a);
+                int d =(int)Math.ceil(b);
+                int res = Math.abs(c - d);
+                System.out.println(res);
+            }
+        }
+    }
+}
