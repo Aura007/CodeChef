@@ -1,0 +1,21 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+    public static void main(String[] args) throws java.lang.Exception
+    {
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        for (int i = 0; i < t; i++) {
+            int x = sc.nextInt();
+            int y = sc.nextInt();
+            int pointsAthenB = (500 - 2 * x) + (1000 - 4 * (x + y));
+            int pointsBthenA = (1000 - 4 * y) + (500 - 2 * (y + x));
+            int res=Math.max(pointsBthenA,pointsAthenB);
+            System.out.println(res);
+        }
+
+    }
+}
